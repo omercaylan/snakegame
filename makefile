@@ -1,0 +1,8 @@
+CC=gcc
+CFLAGS=
+SOURSES=main.c
+OBJECTS=$(SOURSES:.c=.O)
+EXECUTABLE=test
+
+all:$(SOURSES) $(EXECUTABLE)
+	$(CC) $(CFLAGS) $(OBJECTS) -o $@
